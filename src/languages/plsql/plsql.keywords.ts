@@ -260,6 +260,7 @@ export const keywords: string[] = [
   'SYNONYM',
   'TABAUTH',
   'TABLE',
+  'TABLESPACE',
   'TDO',
   'THE',
   'THEN',
