@@ -1,10 +1,11 @@
 {
   "dependencies": {
     "dedent-js": "^1.0.1",
-    "nearley": "^2.20.1",
-    "sql-formatter": "^15.4.9"
+    "nearley": "^2.20.1"
   },
   "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.14",
     "@types/nearley": "^2.11.5"
   }
 }
