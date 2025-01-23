@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "dedent-js": "^1.0.1",
     "sql-formatter": "^15.4.9"
   }
 }
