@@ -1,13 +1,22 @@
 import {format} from './sqlFormatter.js';
 const sql=`
-CREATE TABLE target_table AS
-SELECT nvl(t1.col1,'default') as col1,
-case when t1.col3='1' then t1.col21 else t2.col22 end as col2
-FROM source_table t1
-left join source_table2 t2 on t1.col1=t2.col1
-where t1.data_date='2025-01-23'
-group by nvl(t1.col1,'default'),case when t1.col3='1' then t1.col21 else t2.col22 end
-order by 1,2;
+CREATE TABLE ODS.O_DSR_AUTO_1H4UOD12K(
+    FID VARCHAR2(72)
+    ,FD_C5AMNYY5RVS VARCHAR2(200)
+    ,FD_GZDNZUE49V4 DATE
+    ,FD_QDWCXT0UDXC NUMBER(16,4)
+    ,FCREATEID NUMBER(20,0)
+    ,FCREATETIME TIMESTAMP
+    ,FMODIFIERID NUMBER(20,0)
+    ,FMODIFYTIME TIMESTAMP
+    ,SYSTEM_EN_TAG VARCHAR2(100)
+    ,SYSTEM_CN_TAG VARCHAR2(200)
+    ,SOR_TAB_NAME VARCHAR2(200)
+    ,ETL_DATE TIMESTAMP
+    ,DATA_DATE VARCHAR2(10)
+)
+TABLESPACE "ODS_D_TBS"
+;
 `
 
 console.log(format(sql, {  language: 'plsql',
