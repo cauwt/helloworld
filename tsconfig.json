@@ -1,8 +1,8 @@
 {
     "compilerOptions": {
       "module": "NodeNext",
-      "target": "es6",
-      "lib": ["es6", "dom"],
+      "target": "ES2019",
+      "lib": ["ES2019", "dom"],
       "rootDirs": ["src"],
       "outDir": "lib",
       "baseUrl": "./",
