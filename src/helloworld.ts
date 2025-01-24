@@ -1,21 +1,8 @@
 import {format} from './sqlFormatter.js';
 const sql=`
-CREATE TABLE ODS.O_DSR_AUTO_1H4UOD12K(
-    FID VARCHAR2(72)
-    ,FD_C5AMNYY5RVS VARCHAR2(200)
-    ,FD_GZDNZUE49V4 DATE
-    ,FD_QDWCXT0UDXC NUMBER(16,4)
-    ,FCREATEID NUMBER(20,0)
-    ,FCREATETIME TIMESTAMP
-    ,FMODIFIERID NUMBER(20,0)
-    ,FMODIFYTIME TIMESTAMP
-    ,SYSTEM_EN_TAG VARCHAR2(100)
-    ,SYSTEM_CN_TAG VARCHAR2(200)
-    ,SOR_TAB_NAME VARCHAR2(200)
-    ,ETL_DATE TIMESTAMP
-    ,DATA_DATE VARCHAR2(10)
-)
-TABLESPACE "ODS_D_TBS"
+select col1, col2 from table1;
+select col1, col2 from table1
+where col1 = 'value1' and col2 = 'value2';
 ;
 `
 
